@@ -1,0 +1,66 @@
+.transparencia {
+  background: rgba(24, 45, 30, 0.0)
+}
+.img-inicio {
+  height: 500px;
+  background-image: url("../img/tapiz.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#banner {
+  height: 300px;
+  background: url("../img/ban2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}   
+.icono {
+border-radius: 50%;
+background-position: center;
+background-size: cover;
+ 
+}
+
+.color-lp {
+  color: #fff;
+}
+.img-p4{
+  width: 100%;
+  height: 600px;
+}
+.circulo{
+  border-radius:50%;
+  background-position: center;
+}
+.icon{
+  animation: float 1.5s ease-out infinite;
+  color: white;
+  font-size: 80px !important;
+}
+@keyframes float{
+  50%{
+    transform: translate(0,10px);
+  }
+}
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+.portada-registro{
+  background-image: url(../img/portada.png);
+  background-size: cover;
+  background-attachment:fixed;
+}
+.dising-form{
+  background: rgba(255,255,255,0.3);
+  border-radius: 10%;
+  padding: 40px 30px 30px;
+}
+.btn-success:hover{
+  background: rgb(91,206,74);
+  border: 1px solid #fff;
+}
+.form-registro{
+  
+}
