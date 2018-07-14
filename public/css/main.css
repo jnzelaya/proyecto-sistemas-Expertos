@@ -48,19 +48,36 @@ background-size: cover;
     color: #36A0FF;
 }
 .portada-registro{
-  background-image: url(../img/portada.png);
+  background-image: url(../img/depositpho.jpg);
   background-size: cover;
   background-attachment:fixed;
+  background-position: center;
 }
 .dising-form{
   background: rgba(255,255,255,0.3);
   border-radius: 10%;
   padding: 40px 30px 30px;
+  transition: 1.5s;
 }
+.dising-form:hover{
+background-color: rgb(111, 230, 237);
+transition: 1.5s;
+}
+
 .btn-success:hover{
   background: rgb(91,206,74);
   border: 1px solid #fff;
 }
 .form-registro{
+  background: rgba(25,25,25,0.1);
+  border-radius: 10%;
+  padding: 30px 30px 30px;
+
+}
+.imagenf{
+  height: 100px;
+  background-image: url(../img/cooltext292734158361560.png);
+  background-position: center;
+  background-size: cover;
   
 }
