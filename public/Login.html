@@ -4,68 +4,52 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Login</title>
+	
 	<link rel="shortcut icon" href="img/festisite_super-mario.png" border-radius = "50%" type="image/x-icon">
+	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<style type="text/css">
-	.icono{
-		border-radius: 50%;
-	}
-		.img-portada{
-			background-image: url(img/Blu9Gy.png);
-			background-position: center;
-			background-size: cover;
-			background-attachment: fixed;
-		}
-	</style>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script src="js/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/font-aweason.js"></script>
 </head>
 <body class="img-portada">
 	<section class="mb-5 mb-sm-5">	
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top transparencia">
-      <a class="navbar-brand" style="color: oldlace" href="index.html">
-        <img src="img/festisite_super-mario.png" height="40" width="40" class="icono" alt=""> JDRIVE</a>
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="transparencia">
+      <a class="navbar-brand" style="color: oldlace" href="index.html"><img src="img/festisite_super-mario.png" class="icono"> JDRIVE</a>
       <button id = "color-barra" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+				aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+			</button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <div class="navbar-nav ml-auto text-center">
-          <a class="nav-item nav-link text-white active" href="index.html">Inicio
-            <span class="sr-only">(current)</span>
-          </a>
+        <div class="navbar-nav ml-auto text-right">
+          <a class="nav-item nav-link text-white active" href="index.html">Inicio</a>
           <a class="nav-item nav-link text-white" href="#">Como usar JDRIVES</a>
-          <!--<a class="nav-item nav-link text-white" href="#">Ingresar</a>-->
           <a class="nav-item nav-link text-white" href="registro.html">Registrarse</a>
         </div>
       </div>
     </nav>
     </section>
 
-    <div class="container" style="padding-top: 10%">
+    <div class="container" style="padding-top: 70px">
     	<div class="row justify-content-center">
-    		<div class="col-sm-12 col-md-8 col-lg-6 col-xl-4">
+    		<div class="col-9 col-sm-9 col-md-7 col-lg-5 col-xl-4">
     			<form class="form-control dising-form">
+							<legend class="text-center font-weight-bold" style="color: black;" >Login</legend>
 			  		<div class="font-weight-bold">
-			    		<label for="exampleInputEmail1">Email address</label>
-			    		<input type="email" class="form-control text-gray-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-			    		<small id="emailHelp" class="form-text text-gray-dark">We'll never share your email with anyone else.</small>
+			    		<label for="exampleInputEmail1">Correo Electronico</label>
+			    		<input type="email" class="form-control text-gray-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo">
+			    		<small id="emailHelp" class="form-text text-black" style="color: black">Nunca compartiremos su correo electrónico.</small>
 			  		</div>
-			  		<div class="font-weight-bold">
+			  		<div class="font-weight-bold pb-5">
 			    		<label for="exampleInputPassword1">Password</label>
-			    		<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-			 		</div>
-			  		<div class="text-left font-weight-bold	" style="padding: 30px 0px 30px 20px">
-					    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-					    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-			  		</div>
+			    		<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese Contraseña">
+						</div>
 			  		<button type="submit" class="btn btn-success form-control hovered">Ingresar</button>
 			  	</form>
 			</div>
 		</div>
-	</div>
-
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
- <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>   
+	</div>   
 </body>
 </html>

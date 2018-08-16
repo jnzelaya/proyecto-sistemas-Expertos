@@ -1,0 +1,36 @@
+<% include partials/enlaces %>
+<title>Editor JDrive</title>
+</head>
+<body>
+
+    <div class="container"> 
+        instalar el modulo ace editor
+        <header class="text-center">
+            <h1>Edita tu codigo!!!</h1>
+
+        </header>
+    </div>
+    
+    <hr>
+
+    <div class="container">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        <span class="fa fa-user"></span> Local
+                    </h3>
+                    <p>
+                        <strong>id</strong>: <%= usuario %> <br>
+                        <strong>nombre</strong>: <%= user.local.email %> <br>
+                        <strong>password</strong>:<%= user.local.password %>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

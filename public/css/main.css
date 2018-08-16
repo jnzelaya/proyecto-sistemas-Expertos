@@ -1,5 +1,17 @@
-.transparencia {
-  background: rgba(24, 45, 30, 0.0)
+/*css de las clases y id's de index.html o loading-page*/
+#transparencia {
+  background: rgba(112, 112, 112, 0.5);
+}
+.btn-primary:hover{
+  background: rgb(250, 36, 36);
+  border: 1px solid #fff;
+}
+.icono {
+  height:40px;
+  width:40px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover; 
 }
 .img-inicio {
   height: 500px;
@@ -8,76 +20,70 @@
   background-attachment: fixed;
   background-size: cover;
 }
-#banner {
-  height: 300px;
-  background: url("../img/ban2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}   
-.icono {
-border-radius: 50%;
-background-position: center;
-background-size: cover;
- 
-}
-
-.color-lp {
-  color: #fff;
-}
-.img-p4{
-  width: 100%;
-  height: 600px;
-}
-.circulo{
-  border-radius:50%;
-  background-position: center;
-}
 .icon{
   animation: float 1.5s ease-out infinite;
   color: white;
   font-size: 80px !important;
+  
 }
 @keyframes float{
   50%{
     transform: translate(0,10px);
   }
 }
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
+#banner {
+  height: 300px;
+  background: url("../img/ban2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.circulo{
+  height:120px; 
+  width:120px;
+  border-radius:50%;
+  background-position: center;
+}
+
+/*css de login*/
+.img-portada{
+  background-image: url(../img/Blu9Gy.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.dising-form{
+  background: rgba(37, 30, 30, 0.8);
+  border-radius: 10%;
+  padding: 20px 30px 30px;
+  transition: 1.5s;
+}
+/*css de registro*/
+.bigicon { 
+    font-size: 30px;
+    color: rgb(28, 36, 43);
 }
 .portada-registro{
-  background-image: url(../img/depositpho.jpg);
+  background-image: url(../img/r2.jpg);
   background-size: cover;
   background-attachment:fixed;
   background-position: center;
 }
-.dising-form{
-  background: rgba(255,255,255,0.3);
-  border-radius: 10%;
-  padding: 40px 30px 30px;
-  transition: 1.5s;
-}
-.dising-form:hover{
-background-color: rgb(111, 230, 237);
-transition: 1.5s;
-}
-
-.btn-success:hover{
-  background: rgb(91,206,74);
-  border: 1px solid #fff;
-}
 .form-registro{
-  background: rgba(25,25,25,0.1);
+  background: rgba(218, 230, 230, 0.9);
   border-radius: 10%;
-  padding: 30px 30px 30px;
-
+  padding: 20px 30px 30px;
+  margin :auto;
+}
+#img-registro{
+  background-position-x: 30px;
+  margin-left: 170px;
+  position: absolute;
 }
 .imagenf{
   height: 100px;
   background-image: url(../img/cooltext292734158361560.png);
   background-position: center;
-  background-size: cover;
-  
+  background-size: cover;  
 }

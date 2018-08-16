@@ -1,0 +1,62 @@
+<% include partials/enlaces %>
+    <title>REGISTRO</title>
+</head>
+
+<body class="portada-registro">
+	<section class="mb-5 mb-sm-5">	
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="transparencia">
+			<a class="navbar-brand font-weight-bold" style="color: oldlace" href="index.html">
+			<img src="img/festisite_super-mario.png" class="icono" alt=""> JDRIVE</a>
+			 <button id = "color-barra" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+		 	         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		             <span class="navbar-toggler-icon"></span>
+		  	</button>
+		    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		        <div class="navbar-nav ml-auto text-right">
+			        <a class="nav-item nav-link text-white active" href="/">Inicio</a>
+			        <a class="nav-item nav-link text-white" href="/">Como usar JDRIVES</a>
+			        <a class="nav-item nav-link text-white" href="login">Ingresar</a>
+		        </div>
+		   </div>
+		</nav>
+	</section>
+
+	<div class="container" style="padding-top: 5%;" >
+	    <div class="row justify-content-center">
+	         <div class="col-9 col-sm-9 col-md-7 col-lg-5 col-xl-4 mt-4">						                           
+				<form action="/registro" method="POST" class="form-control form-registro">
+					<legend class="text-center font-weight-bold">REGISTRO</legend>
+					<div class="row justify-content-center  mt-3">
+						<span class="col-md-offset-2 text-center pr-2"><i class="fa fa-user bigicon"></i></span>
+						<div>
+							<input name="nombre" type="text" placeholder="Ingrese su nombre" class="form-control">
+						</div>
+					</div>
+					<div class="row justify-content-center  mt-3">
+						<span class="col-md-offset-2 text-center pr-2"><i class="fa fa-user bigicon"></i></span>
+						<div>
+							<input name="apellido" type="text" placeholder="Ingrese su Apellido" class="form-control">
+						</div>
+					</div>
+					<div class="row justify-content-center  mt-3">
+						<span class="col-md-offset-2 text-center pr-2"><i class="fa fa-envelope bigicon"></i></span>
+						<div>
+							<input name="email" type="email" placeholder=" Email Address" class="form-control">
+						</div>
+						<p style="font-size:13px; padding-left: 25px">Nunca compartiremos tu correo.</p>
+					</div>
+					<div class="row form-group justify-content-center">
+						<span class="col-md-offset-2 text-center pr-2"><i class="fa fa-unlock-alt bigicon"></i></span>
+						<div>
+							<input name="password" type="password" placeholder="password" class="form-control">
+						</div>
+					</div>									
+					<div class="text-center">						
+						<button type="submit" class="btn btn-primary btn-lg">Registrar</button>
+					</div>										
+				</form>	           
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>
