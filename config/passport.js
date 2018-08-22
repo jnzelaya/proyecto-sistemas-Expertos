@@ -55,21 +55,30 @@ module.exports = function(passport){
     }));
  
     //ingresar
-    /*passport.use('ingreso-local', new localStrategy({
+    passport.use('ingreso-local', new localStrategy({
         usernameField : 'email',
         passwordField : 'password',
         passReqToCallback : true
     },
     function(req,email,password,done){
-        User.findOne({'local.email':email},function(err,user){
-            if(err){return done(err);}
-            if(!user){
+        conection.query("SELECT  * FROM tbl_usuario WHERE correo = ?",[email],
+        function(err,user){             
+            if(err){
+                return done(err);
+            }
+            if(!user.length){
                 return done(null,false,req.flash('ingresoMensaje','usuario no encontrado!'));
             }
-            if(!user.validatePassword(password)){
+            if(!bcrypt.compareSync(password,user[0].password)){
                 return done(null,false,req.flash('ingresarMensaje','contraseña incorrecta!'));
             }
-            return done(null, user);            
+            return done(null, user[0]); 
         });
-    }));*/    
+    })
+);
+
 }
+
+    
+    
+    
