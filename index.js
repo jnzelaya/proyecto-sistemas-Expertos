@@ -10,6 +10,8 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 
+require("./config/config")
+
 //const { url } = require('./config/database');
 
 //mongoose.connect(url);
@@ -17,7 +19,7 @@ const session = require('express-session');
 require('./config/passport')(passport);
 
 //settings
-app.set('port',process.env.PORT || 3000);
+app.set(process.env.PORT || 3000);
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine', 'ejs');
 
@@ -40,6 +42,6 @@ require('./routes/routes')(app,passport);
 //static file
 app.use(express.static(path.join(__dirname,"public")));
 
-app.listen(app.get('port'),()=>{
-    console.log("servidor arriba");
+app.listen(app.get(process.env.PORT),()=>{
+    console.log("servidor arriba escuchando en: "+ process.env.PORT);
 });
