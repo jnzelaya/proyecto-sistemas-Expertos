@@ -11,8 +11,6 @@ var credenciales={
 
 var conection = mysql.createConnection(credenciales);
 
-//const User = require('../routes/models/user');
-
 module.exports = function(passport){
     
     passport.serializeUser(function(user, done){
@@ -31,7 +29,6 @@ module.exports = function(passport){
         passwordField : 'password',
         passReqToCallback : true
     },function(req,email,password,done){
-        //User.findOne({'local.email':email},function(err,user){
           conection.query("select * from tbl_usuario where correo = '"+ email +"'",function(err,rows){
             if(err){return done(err);}
             if(rows.length){
@@ -70,13 +67,11 @@ module.exports = function(passport){
                 return done(null,false,req.flash('ingresoMensaje','usuario no encontrado!'));
             }
             if(!bcrypt.compareSync(password,user[0].password)){
-                return done(null,false,req.flash('ingresarMensaje','contraseña incorrecta!'));
+                return done(null,false,req.flash('ingresoMensaje','contraseña incorrecta!'));
             }
             return done(null, user[0]); 
         });
-    })
-);
-
+    }));
 }
 
     

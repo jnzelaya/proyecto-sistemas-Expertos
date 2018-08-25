@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start" : "node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jairo",
@@ -16,6 +16,7 @@
     "cookie-parser": "^1.4.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "express-fileupload": "^0.4.0",
     "express-session": "^1.15.6",
     "hbs": "^4.0.1",
     "mongoose": "^5.2.7",
