@@ -65,14 +65,18 @@
     font-size: 30px;
     color: rgb(28, 36, 43);
 }
-.portada-registro{
-  height: 100%;
-  background-image: url(../img/fondor1.jpg);
-  background-size: cover;
-  background-attachment:fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+
+@media(min-width: 300px){
+  .portada-registro{
+    height: 100%;
+    background-image: url(../img/fondor1.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
+
 .form-registro{
   background: rgba(218, 230, 230, 0.9);
   border-radius: 10%;
