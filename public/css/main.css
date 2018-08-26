@@ -49,7 +49,7 @@
 .img-portada{
   background-image: url(../img/Blu9Gy.png);
   background-position: center;
-  background-size: cover;
+  background-size:cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -65,10 +65,11 @@
     color: rgb(28, 36, 43);
 }
 .portada-registro{
-  background-image: url(../img/r2.jpg);
+  background-image: url(../img/fondor1.jpg);
   background-size: cover;
   background-attachment:fixed;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .form-registro{
   background: rgba(218, 230, 230, 0.9);
