@@ -47,6 +47,7 @@
 
 /*css de login*/
 .img-portada{
+  height: 100%;
   background-image: url(../img/Blu9Gy.png);
   background-position: center;
   background-size:cover;
@@ -65,6 +66,7 @@
     color: rgb(28, 36, 43);
 }
 .portada-registro{
+  height: 100%;
   background-image: url(../img/fondor1.jpg);
   background-size: cover;
   background-attachment:fixed;
